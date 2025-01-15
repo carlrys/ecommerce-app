@@ -1,5 +1,5 @@
 import React from 'react';
-import Carousel2 from './EmblaCarousel';
+import EmblaCarousel from './EmblaCarousel';
 import { EmblaOptionsType } from 'embla-carousel'
 
 
@@ -42,7 +42,7 @@ const DynamicCarousel: React.FC = () => {
 
     return(
         <div>
-            <Carousel2 slides={items} isCustomCarousel={true} options={OPTIONS}/>
+            <EmblaCarousel slides={items} isCustomCarousel={true} options={OPTIONS}/>
             <style>
             </style>
         </div>
