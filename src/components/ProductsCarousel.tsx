@@ -1,10 +1,10 @@
 import React from 'react';
-import Carousel2 from './EmblaCarousel';
+import EmblaCarousel from './EmblaCarousel';
 import { EmblaOptionsType } from 'embla-carousel'
 
 
 const ProductsCarousel: React.FC = () => {
-    // const OPTIONS: EmblaOptionsType = { loop: true }
+    const OPTIONS: EmblaOptionsType = { loop: true }
 
     const items= [
         {
@@ -45,7 +45,7 @@ const ProductsCarousel: React.FC = () => {
                 <h2>Featured Products</h2>
                 <div className='underline' />
             </div>
-            <Carousel2 slides={items}  />
+            <EmblaCarousel slides={items} options={OPTIONS}   />
             <style>
                 {`
                     .feature-product-section {
