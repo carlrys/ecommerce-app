@@ -57,7 +57,7 @@ const EmblaCarousel: React.FC<PropType> = ({
     };
 
     return (
-        <section className="embla">
+        <section className={`embla ${isCustomCarousel ? 'custom' : ''}`}>
             <div className="embla__viewport" ref={emblaRef}>
                 <div className="embla__container">
                     {slides.map(({ id, image, title, description }, index) => (
@@ -89,6 +89,9 @@ const EmblaCarousel: React.FC<PropType> = ({
                         --slide-height: 19rem;
                         --slide-spacing: 1rem;
                         --slide-size: 41%;
+                    }
+                    .embla.custom {
+                        --slide-height: 30rem;
                     }
                     .embla__viewport {
                         overflow: hidden;
